@@ -37,7 +37,7 @@ module.exports = {
     path: path.join(__dirname, '/dist'),
     publicPath: '/',
     filename: 'bundle.js',
-    library: 'InlineImage',
+    library: 'Изображение',
     libraryTarget: 'umd',
     libraryExport: 'default',
   },

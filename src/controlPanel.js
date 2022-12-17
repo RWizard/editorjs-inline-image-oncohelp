@@ -65,7 +65,7 @@ export default class ControlPanel {
     const wrapper = make('div', this.cssClasses.controlPanel);
     const tabWrapper = make('div', this.cssClasses.tabWrapper);
     const embedUrlTab = make('div', [this.cssClasses.tab, this.cssClasses.active], {
-      innerHTML: 'Embed URL',
+      innerHTML: 'Вставить URL',
       onclick: () => this.showEmbedUrlPanel(),
     });
     const unsplashTab = make('div', [this.cssClasses.tab, this.showEmbedTab ? null : this.cssClasses.active], {
@@ -127,11 +127,11 @@ export default class ControlPanel {
     });
     const embedImageButton = make('div', [this.cssClasses.embedButton, this.cssClasses.input], {
       id: 'embed-button',
-      innerHTML: 'Embed Image',
+      innerHTML: 'Вставить картинку',
       onclick: () => this.embedButtonClicked(urlInput.innerHTML),
     });
 
-    urlInput.dataset.placeholder = 'Enter image url...';
+    urlInput.dataset.placeholder = 'Введите URL картинки...';
 
     wrapper.appendChild(urlInput);
     wrapper.appendChild(embedImageButton);
@@ -170,7 +170,7 @@ export default class ControlPanel {
       oninput: () => this.searchInputHandler(),
     });
 
-    searchInput.dataset.placeholder = 'Search for an image...';
+    searchInput.dataset.placeholder = 'Поиск изображения (только на английском)...';
 
     wrapper.appendChild(searchInput);
     wrapper.appendChild(imageGallery);

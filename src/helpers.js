@@ -46,7 +46,7 @@ export const isUrl = (url) => {
 export const createImageCredits = ({ appName, author, profileLink }) => {
   const wrapper = make('div', 'inline-image__image-credits');
   const by = make('div', null, {
-    innerHTML: 'by ',
+    innerHTML: 'Фотограф ',
     style: 'display: inline;',
   });
   const authorProfileLink = make('a', '', {
@@ -55,7 +55,7 @@ export const createImageCredits = ({ appName, author, profileLink }) => {
     target: '_blank',
   });
   const on = make('div', null, {
-    innerHTML: ' on ',
+    innerHTML: ' на ',
     style: 'display: inline;',
   });
   const unsplashLink = make('a', '', {

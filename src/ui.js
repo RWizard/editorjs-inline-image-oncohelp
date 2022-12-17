@@ -103,7 +103,7 @@ export default class Ui {
     });
     this.nodes.imageHolder = make('div', this.CSS.imageHolder);
 
-    caption.dataset.placeholder = 'Enter a caption';
+    caption.dataset.placeholder = 'Подпись под фотографией';
 
     if (data.url) {
       wrapper.appendChild(loader);
